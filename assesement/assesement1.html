@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            color: #ccc;
+        }
+
+        .class1 {
+            
+            background: #1a1a1a;
+            padding: 20px;
+        }
+
+        .class2 {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .class3 {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .class4 {
+            list-style: none;
+            display: flex;
+            gap: 100px;
+            font-weight: normal;
+        }
+
+        .class4 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .class5 {
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+
+        .class6 {
+            display: flex;
+            background-color: #333; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;
+        }
+
+        .class7 {
+            flex: 1;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            background: linear-gradient(to right, #2a2a2a, #333);
+        } 
+
+        .class7 h1 {
+            font-size: 3em;
+            color: #fff;
+        }
+
+        .class7 p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #aaa;
+        }
+
+        .class8 {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 25px;
+            width: fit-content;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 5px rgba(231, 76, 60, 0.4);
+        }
+
+        .class9 {
+            flex: 1;
+        }
+
+        .class9 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .class10 {
+            display: flex;
+            gap: 20px;
+            padding: 40px 0;
+            margin-top: 20px;
+        }
+
+        .class11 {
+            flex: 3;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 3px;
+        }
+
+        .class11 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .class12 {
+            grid-row: span 2;
+        }
+
+        .class13 {
+            flex: 7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .class14 {
+            background-color: #e74c3c;
+            color: white;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 3px;
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .class14 small {
+            font-size: 1em;
+            display: block;
+            margin-bottom: 5px;
+            margin-bottom: 10%;
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        .class14 h2 {
+            font-size: 2.5em;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+        }
+
+        .class15 {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        .class15 span {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .class6, .class10 {
+                flex-direction: column;
+            }
+
+            .class7 {
+                padding: 40px 20px;
+            }
+
+            .class7 h1 {
+                font-size: 2.5em;
+            }
+
+            .class11 {
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
+            }
+             .class12 {
+                 grid-row: span 1;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="class1">
+        <div class="class2">
+            <header class="class3">
+                <nav>
+                    <ul class="class4">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="class5"><img src="menu-bar.png" alt="" height="25" width="25"></div>
+            </header>
+
+            <section class="class6">
+                <div class="class7">
+                    <h1>LOREM IPSUM</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
+                        Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                        Sed pulvinar, massa ac porta viverra.
+                    </p>
+                    <button class="class8">Click Me</button>
+                </div>
+                <div class="class9">
+                    <img src="pexels-robin-stickel-70497.jpg" alt="Gourmet Burger and Fries">
+                </div>
+            </section>
+
+            <section class="class10">
+                <div class="class11">
+                    
+                    <img src="pexels-rachel-claire-6752433.jpg" alt="Fine dining spread with shrimp" >
+                    
+
+                    <img class="class12" src="pexels-mister-mister-3434523.jpg" alt="Neon sign of The Stage on Broadway">
+
+                    <img src="pexels-eva-bronzini-6141651.jpg" alt="Cobblestone street with outdoor cafe seating" >
+
+
+                </div>
+
+                <div class="class13">
+                    <div class="class14">
+                        <small>LOREM IPSUM</small>
+                        <h2>LOREM IPSUM SET ADEMIR</h2>
+                        <a href="#" class="class15">
+                            <span>Click</span>
+                            <img src="icons8-arrow-30.png" alt="" height="25" width="25">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
